@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+}
+body, h1, p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: auto;
+    width: 700px;
+}
+main, header{
+    width: 600px;
+}
+.header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #85a6c8;
+    color: #fff;
+    height: 150px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 50px;
+}
+
+.in-process-tasks{
+    font-size: 85px;
+}
+.add-task{
+    position: absolute;
+    top: 125px;
+    right: 50px;
+    background-color: #095097;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+.filter{
+    padding-left: 40px;
+    display: flex;
+    border: 1px solid #cdd4db;
+}
+.menu, .circle, .checked{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.filter-choise{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    margin-bottom: -1px;
+}
+/* .filter-choise:first-child{
+    border-bottom: 1px solid blue;
+} */
+
+.chosen{
+    border-bottom: 1px solid blue;
+}
+
+.new-task{
+    display: flex;
+    align-items: center;
+    flex-shrink: initial;
+    border: 1px solid #cdd4db;
+    height: 70px;
+    width: 600px;
+    position: relative;
+    cursor: move;
+}
+.square{
+    position: absolute;
+    left: 20px;
+    height: 25px;
+    width: 25px;
+    border: 1px solid black;
+    display: none;
+    cursor: pointer;
+}
+.square:active{
+    height: 23px;
+    width: 23px;
+}
+.tick{
+    position: absolute;
+    left: 17px;
+    width: 35px;
+    height: 35px;
+    display: none;
+    cursor: pointer;
+}
+.input-field, .paragraph{
+    width: 475px;
+    border: 0;
+    outline: none;
+    padding: 0 15px 0 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.input-field::placeholder{
+    color: #686868
+}
+.button-save, .button-edit{
+    outline: none;
+    border: none;
+    background:white;
+    font-weight: lighter;
+    padding: 0 10px 7px 7px;
+    cursor: pointer;
+}
+.button-save:active, .button-edit:active{
+    font-size: 23px;
+}
+.display-none{
+    display: none;
+}
+.bin{
+    position: absolute;
+    right: 20px;
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+.bin:active{
+    padding: 1px;
+}
+
+.selected{
+    opacity: .6;
+}
+
+
+
+
+
+
+
+
+
